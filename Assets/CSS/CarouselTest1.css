@@ -1,0 +1,142 @@
+.geeks-favourite-container {
+    height: auto;
+}
+
+.geeks-favourite {
+    height: inherit;
+}
+
+.geeks-favourite .carousel-control {
+    background: lightgray;
+    width:  40px;
+    height: inherit;
+}
+.geeks-favourite .carousel-control.left,
+.geeks-favourite .carousel-control.right {
+    height: inherit;
+    background-image:none;
+    margin: 0px;
+}
+
+.geeks-favourite .carousel .item {
+    min-height: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 767px) {
+    .geeks-favourite .carousel-inner .active.left { left: -100%; }
+    .geeks-favourite .carousel-inner .next        { left:  100%; }
+    .geeks-favourite .carousel-inner .prev		 { left: -100%; }
+    .geeks-favourite .active > div { display:none; }
+    .geeks-favourite .active > div:first-child { display:block; }
+    .geeks {  margin: 0 auto;  }
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .geeks {  margin: 0 auto;  }
+    .geeks-favourite .carousel-inner .active.left { left: -50%; }
+    .geeks-favourite .carousel-inner .next        { left:  50%; }
+    .geeks-favourite .carousel-inner .prev		 { left: -50%; }
+    .geeks-favourite .active > div { display:none; }
+    .geeks-favourite .active > div:first-child { display:block; }
+    .geeks-favourite .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .geeks-favourite .carousel-inner .active.left { left: -25%; }
+    .geeks-favourite .carousel-inner .next        { left:  25%; }
+    .geeks-favourite .carousel-inner .prev		 { left: -25%; }
+}
+
+
+
+
+
+.geeks-inner {
+    border-radius: 6px;
+    position:relative;
+    width: 100%;
+    height:inherit;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+}
+.geeks-inner p,.geeks-inner h2 {
+    color:#001a1a;
+    padding:10px;
+    top:20px;
+    position:relative
+}
+.geeks-inner p {
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.geeks-inner h2 {
+    font-size:15px;
+    line-height:24px;
+    margin:0;
+    font-family:'Lato'
+}
+.effect img {
+    width: 100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+
+.effect img.top {
+    width: 100%;
+    margin-top: 0px;
+    bottom:-25px;
+}
+
+.effect img.top:hover {
+    bottom:-56px;
+}
+p.zero {
+    margin-top: -10px;
+}
+h2.zero {
+    margin-top: -30px;
+}
+
+.geeks {
+    margin-top: 10px;
+    padding-top: 0;
+    background: whitesmoke;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 262px;
+    height: 250px;
+    transition: .7s;
+    -moz-box-shadow: 0px 3px 8px rgb(163, 163, 163);
+    -webkit-box-shadow: 0px 3px 8px rgb(163, 163, 163);
+    box-shadow: 0px 3px 8px rgb(163, 163, 163);
+}
+
+.geeks-favourite .carousel-control .glyphicon-menu-left, .carousel-control .icon-prev {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.geeks-favourite .carousel-control .glyphicon-menu-right, .carousel-control .icon-prev {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.geeks-favourite .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}

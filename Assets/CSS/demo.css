@@ -1,0 +1,194 @@
+body {
+  padding-top: 50px;
+}
+
+.carousel-caption .slide1-text1 {
+	color: #f5c639;
+	position: relative;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-duration: .4s;
+	animation-name: slide1-text1-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+@keyframes slide1-text1-anim {
+	from {
+		left: 200px;
+	}
+	to {
+		opacity: 1;
+		left: 0px;
+	}
+}
+.carousel-caption .slide1-text2 {
+	color: #f5c639;
+	position: relative;
+	opacity: 0;
+	animation-duration: .4s;
+	animation-fill-mode: forwards;
+	animation-name: slide1-text2-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+@keyframes slide1-text2-anim {
+	from {
+		right: 200px;
+	}
+	to {
+		opacity: 1;
+		right: 0px;
+	}
+}
+.carousel-caption .slide1-btn {
+	color: #135369;
+	opacity: 0;
+	position: relative;
+	animation-duration: .6s;
+	animation-delay: .4s;
+	animation-fill-mode: forwards;
+	animation-name: slide1-btn-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+@keyframes slide1-btn-anim {
+	from {
+		transform: scale(.5, .5);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+.carousel-caption .slide2-text {
+	opacity: 0;
+	position: relative;
+	animation-duration: .5s;
+	animation-delay: .2s;
+	animation-fill-mode: forwards;
+	animation-name: slide2-text-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+@keyframes slide2-text-anim {
+	from {
+		top: -200px;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
+
+
+.carousel-caption .slide2-btn {
+	opacity: 0;
+	position: relative;
+	animation-duration: .6s;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+	animation-name: slide2-btn-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+@keyframes slide2-btn-anim {
+	from {
+		transform: scale(.5, .5);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+.carousel-caption .slide3-text {
+	opacity: 0;
+	position: relative;
+	animation-duration: .6s;
+	animation-delay: .2s;
+	animation-fill-mode: forwards;
+	animation-name: slide3-text-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+@keyframes slide3-text-anim {
+	from {
+		bottom: -200px;
+	}
+	to {
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+
+
+.carousel-caption .slide3-btn {
+	opacity: 0;
+	position: relative;
+	animation-duration: .6s;
+	animation-delay: .8s;
+	animation-fill-mode: forwards;
+	animation-name: slide2-btn-anim;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+@keyframes slide3-btn-anim {
+	from {
+		transform: scale(.5, .5);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+
+.slide1 {
+	background-image: url("../Images/diygeeks-ask-fuse.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.slide2 {
+	background-image: url("../Images/diygeeks-learn.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.slide3 {
+	background-image: url("../Images/diygeeks-shop.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+
+#carousel-example-generic .carousel-control.left,
+#carousel-example-generic  .carousel-control.right {
+	margin-left: 0px;
+	background-image: none;
+}
+
+.carousel .item {
+	min-height: 377px;
+	height: 100%;
+	width:100%;
+	border-radius: 8px;
+}
+.carousel .icon-container, {
+	background-color: #135369;
+}
+.carousel-caption h3 {
+	padding: .5em;
+}
+.carousel .icon-container {
+	display: inline-block;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 1em;
+	text-align: center;
+
+	border-radius: 50%;
+}
+.carousel-caption button {
+	color: #135369;
+	background: #f5c639;
+	border-color: #f5c639;
+	margin-top: 1em;
+}
