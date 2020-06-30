@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorials</title>
+    <script src="../Assets/jquery.js"></script>
+    <link href="../Assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../Assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link href="../Assets/CSS/tutorials.css" rel="stylesheet" type="text/css">
+    <link href="../Assets/CSS/shared.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/JS/Shared.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="headLinks" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="../Assets/Images/ainak.png" class="sidenav-logo">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Learn</a>
+    <a href="#">Fab Lab</a>
+    <a href="#">Diy Nest</a>
+</div>
+<div id="wrapper">
+    <div id="head">
+        <div class="head-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-md-0 col-sm-0 col-xs-12 mobile-view">
+                        <table class="table mobile-view-table">
+                            <tr>
+                                <td align="left">
+                                    <span onclick="openNav()"><img class="sidenav-toggle" src="../Assets/Icons/Menu-50.png"></span>
+                                </td>
+                                <td align="center">
+                                    <img class="mobile-view-logo" src="../Assets/Images/ainak.png">
+                                </td>
+                                <td align="right">
+                                    <form autocomplete="on">
+                                        <input class="mobile-search-bar" name="search" type="text" placeholder="Search..">
+                                        <button class="mobile-search-btn" type="submit"><span class="">Button</span></button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-0">
+                        <img class="logo" src="../Assets/Icons/diygeeks-logo.png">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-0">
+                        <ul class="list-inline head-link-container">
+                            <li class="head-link-list"><a class="head-link">Home</a></li>
+                            <li class="head-link-list"><a class="head-link">Shop</a></li>
+                            <li class="head-link-list"><a class="head-link">Learn</a></li>
+                            <li class="head-link-list"><a class="head-link">Fab Lab</a></li>
+                            <li class="head-link-list"><a class="head-link">Diy Nest</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-0">
+                        <form>
+                            <div class="head-search-bar-container input-group">
+                                <input type="text" class="form-control head-search-bar" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary head-search-btn" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-2 col-xs-12 head-icon-container">
+                        <table class="table head-icon-table">
+                            <tr>
+                                <td class="head-table-td"><a><img title="Add Items" class="head-icon"  src="../Assets/Icons/Plus(g).png"></a></td>
+                                <td class="head-table-td"><span><a><img title="View Cart" id="cartBtn" class="head-icon" src="../Assets/Icons/Cart(g).png"><p class="counter">2</p></a></span></td>
+                                <td class="head-table-td"><a><img title="Login/Register" data-toggle="modal" data-target="#loginRegister" class="head-icon"  src="../Assets/Icons/login(g).png"></a></td>
+                                <!-- Modal -->
+                                <div class="modal fade" id="loginRegister" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 login">
+                                                    <p class="login-form-heading" >Login</p>
+                                                    <form>
+                                                        <input type="text" class="form-control" placeholder="Username OR Email *">
+                                                        <input type="password" class="form-control" placeholder="Password *">
+                                                        <p class="login-with-heading">Login With</p>
+                                                        <ul class="list-inline">
+                                                            <li><a><img title="Facebook" class="login-with" src="../Assets/Icons/Facebook(y).png"></a></li>
+                                                            <li><a><img title="Twitter" class="login-with" src="../Assets/Icons/Twitter(y).png"></a></li>
+                                                        </ul>
+                                                        <input type="submit" value="Login" class="btn-block">
+                                                    </form>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 register">
+                                                    <p class="register-form-heading">First Time Here?</p>
+                                                    <p class="register-form-heading">Create Your Account</p><br>
+                                                    <form>
+                                                        <input type="text" class="form-control" placeholder="Email Address *">
+                                                        <input type="password" class="form-control" placeholder="Password *">
+                                                        <p class="register-with-heading">Register With</p>
+                                                        <ul class="list-inline">
+                                                            <li><a><img title="Facebook" class="register-with" src="../Assets/Icons/Facebook(b).png"></a></li>
+                                                            <li><a><img title="Twitter" class="register-with" src="../Assets/Icons/Twitter(b).png"></a></li>
+                                                        </ul>
+                                                        <input type="submit" value="Register" class="btn-block">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-6 col-md-6 col-xs-11">
+                        <div class="cart">
+                            <div class="row cart-item">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <img src="../Assets/Images/IMG_5801-300x300.jpg" style="height: 60px">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-8">
+                                    <p class="cart-item-name">DIY IOT BOX</p>
+                                    <p class="item-unit-price">1 x Rs. 3000</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <p class="item-total"><b>TOTAL :</b> 3000</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <button class="btn btn-block btn-danger">Remove Item</button>
+                                </div>
+                            </div>
+                            <div class="row cart-item">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <img src="../Assets/Images/diy-box-300x300.jpg" style="height: 60px">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-8">
+                                    <p class="cart-item-name">DIY BOX</p>
+                                    <p class="item-unit-price">1 x Rs. 2800</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <p class="item-total"><b>TOTAL :</b> 2800</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <button class="btn btn-block btn-danger">Remove Item</button>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-md-offset-6 col-md-6">
+                                    <p class="grand-total"><b>GRAND TOTAL :</b> Rs. 5800</p>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-md-6 col-sm-6">
+                                    <button class="btn btn-block view-cart">View Cart</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <button class="btn btn-block check-out">Check Out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-6 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-background">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav left-bar-content">
+                                    <li class="active"><a href="#">Page 1</a></li>
+                                    <li><a href="#">Page 2</a></li>
+                                    <li><a href="#">Page 3</a></li>
+                                    <li><a href="#">Page 4</a></li>
+                                    <li><a href="#">Page 5</a></li>
+                                    <li><a href="#">Page 6</a></li>
+                                    <li><a href="#">Page 7</a></li>
+                                    <li><a href="#">Page 8</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right right-bar-content">
+                                    <li class="dropdown btn1-dropdown">
+                                        <a class="btn dropdown-toggle btn1" data-toggle="dropdown" href="#">Button 1 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown btn2-dropdown">
+                                        <a class="btn btn2 dropdown-toggle" data-toggle="dropdown" href="#">Button 2 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu btn2-dropdown">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content-->
+
+    <div id="content">
+        <div class="container tutorials">
+            <div class="row">
+                <div class="tutorial-heading col-md-12">
+                    <h2>Arduino / Basic</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 tutorial">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <p>Tutorial 1</p>
+                    </div>
+                    <div class="img-hover">
+                        <div class="background-img"></div>
+                        <div class="row icons-container">
+                            <div style="text-align: center" class="col-md-4 col-sm-4 col-xs-4 tutorial-icon">
+                                <button class="btn btn-block btn-tutorial">
+                                    <i class="fa fa-eye fa-fw"></i> View
+                                </button>
+                            </div>
+                            <div style="text-align: center" class="col-md-4 col-sm-4 col-xs-4 tutorial-icon">
+                                <button class="btn btn-block btn-tutorial">
+                                    <i class="fa fa-heart fa-fw"></i> Like
+                                </button>
+                            </div>
+                            <div style="text-align: center" class="col-md-4 col-sm-4 col-xs-4 tutorial-icon">
+                                <button class="btn btn-block btn-tutorial">
+                                    <i class="fa fa-star fa-fw"></i> Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-4 tutorial">
+                <div class="thumbnail">
+                    <div style="background-image: url('https://diygeeks.org/wp-content/uploads/2016/09/gsdiy-1138x547.png')" class="img-hover">
+                        <div class="img-hover-data">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4 tutorial-icon1">
+                                    <a class="tutorial-link"><i title="view" class="fa fa-eye fa-3x"></i></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 tutorial-icon2">
+                                    <a class="tutorial-link"><i title="like" class="like fa fa-heart-o fa-3x"></i></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 tutorial-icon3">
+                                    <a class="tutorial-link"><i title="wishlist" class="favourite fa fa-star-o fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caption">
+                        <h3>ARDUINO PROGRAMMING</h3>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-4 tutorial">
+                <div class="thumbnail">
+                    <div style="background-image: url('https://diygeeks.org/wp-content/uploads/2016/10/T1-Button-LED-1138x547.png')" class="img-hover">
+                        <div class="img-hover-data">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-4 tutorial-icon1">
+                                    <a class="tutorial-link"><i title="view" class="fa fa-eye fa-3x"></i></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 tutorial-icon2">
+                                    <a class="tutorial-link"><i title="like" class="like fa fa-heart-o fa-3x"></i></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 tutorial-icon3">
+                                    <a class="tutorial-link"><i title="wishlist" class="favourite fa fa-star-o fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caption">
+                        <h3>ARDUINO PROGRAMMING</h3>
+                    </div>
+                </div>
+            <!--</div>-->
+            </div>
+            </div>
+            <div class="row">
+                <center>
+                    <ul class="pagination pagination-lg">
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!--Content end-->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row footer-link">
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                SUPPORTED BY
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-data-list">
+                                    <img src="../Assets/Images/PLAN9LOGOWPITB.png" style="height: 30px">
+                                </li>
+                                <li class="footer-data-list">
+                                    <img src="../Assets/Images/microsoft-diygeeks.png" style="height: 30px">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                UTILITIES
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-link-list">
+                                    About Us
+                                </li>
+                                <li class="footer-link-list">
+                                    Contact US
+                                </li>
+                                <li class="footer-link-list">
+                                    Message for You
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                WE ARE SECURE!
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-data-list">
+                                    <img src="../Assets/Images/comodo_secure.png" style="height: 60px">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                CONTACT INFO
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-data-list">
+                                    <h4>ADDRESS</h4>
+                                    <p>Room # 3, 9th Floor
+                                        Arfa Software Technology Park, Lahore</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copy-right">
+                    <div class="col-md-12">
+                        <center>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p><a href="#">privacy </a>/<a href="#"> terms and conditions</a></p>
+                                </li>
+                                <li>
+                                    <p>DIY GEEKS - Socializing Technology - 2016</p>
+                                </li>
+                            </ul>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../Assets/JS/tutorials.js"></script>
+</body>
+</html>

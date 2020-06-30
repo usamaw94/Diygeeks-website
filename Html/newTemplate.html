@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Template</title>
+
+    <script src="../Assets/jquery.js"></script>
+    <link href="../Assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <link href="../Assets/CSS/newTemplate.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/JS/newTemplate.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <div class="head-background">
+                <div class="container">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                        <a href="#">Link 5</a>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
+                        <span class="glyphicon glyphicon-th-list sidenav-toggle" onclick="openNav()"></span>
+                        <img class="logo" src="../Assets/Icons/diygeeks-logo.png">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-0">
+                        <ul class="list-inline head-link-container">
+                            <li class="head-link-list"><a class="head-link">Link 1</a></li>
+                            <li class="head-link-list"><a class="head-link">Link 2</a></li>
+                            <li class="head-link-list"><a class="head-link">Link 3</a></li>
+                            <li class="head-link-list"><a class="head-link">Link 4</a></li>
+                            <li class="head-link-list"><a class="head-link">Link 5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-7">
+                        <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control head-search-bar" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary head-search-btn" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 head-icon-container">
+                        <ul class="list-inline head-icon-list-container">
+                            <li class="head-icon-list"><a class="head-icons"><span class="glyphicon glyphicon-plus"></span></a></li>
+                            <li class="head-icon-list"><a class="head-icons"><span class="glyphicon glyphicon-bell"></span></a></li>
+                            <li class="head-icon-list"><a class="head-icons"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-background">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <nav class="menu-bar">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="#">Page 1</a></li>
+                                        <li><a href="#">Page 2</a></li>
+                                        <li><a href="#">Page 3</a></li>
+                                        <li><a href="#">Page 4</a></li>
+                                        <li><a href="#">Page 5</a></li>
+                                        <li><a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer">More <span class="glyphicon glyphicon-menu-down"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Page 6</a></li>
+                                                <li><a href="#">Page 7</a></li>
+                                                <li><a href="#">Page 8</a></li>
+                                                <li><a href="#">Page 9</a></li>
+                                                <li><a href="#">Page 10</a></li>
+                                                <li><a href="#">Page 11</a></li>
+                                                <li><a href="#">Page 12</a></li>
+                                                <li><a href="#">Page 13</a></li>
+                                                <li><a href="#">Page 14</a></li>
+                                                <li><a href="#">Page 15</a></li>
+                                                <li><a href="#">Page 16</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 btn-container">
+                            <button type="button" class="btn btn1">Buttom 1</button>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 btn-container">
+                            <button type="button" class="btn btn2">Buttom 2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="container">
+                <div class="row filters">
+                    <form>
+                        <div class="col-md-offset-6 col-md-6 filter-container">
+                            <ul class="list-inline">
+                                <li>
+                                    <label class="filter-label">Content</label>
+                                    <select class="filter form-control">
+                                        <option>Digi Key</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label class="filter-label">Product Quantity</label>
+                                    <input type="number" class="filter form-control">
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 table-container">
+                        <table class="table table-striped items-table">
+                            <thead class="items-table-head">
+                                <tr class="items-table-head">
+                                    <th>Reference</th>
+                                    <th>Description</th>
+                                    <th>Manufacturer</th>
+                                    <th>Manufacturer Part Number</th>
+                                    <th>Package</th>
+                                    <th>Distributer Part Number</th>
+                                    <th>Qty</th>
+                                    <th>Unit Cost</th>
+                                    <th>Order Qty</th>
+                                    <th>Total Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="items-table-data">
+                                    <td>U1</td>
+                                    <td>Gyro+Acc</td>
+                                    <td>InvenSense</td>
+                                    <td>MPU-6000</td>
+                                    <td>QFN24</td>
+                                    <td>Digi-Key 1248</td>
+                                    <td>1</td>
+                                    <td>10.72</td>
+                                    <td>1</td>
+                                    <td>10.72</td>
+                                </tr>
+                                <tr>
+                                    <td>U1</td>
+                                    <td>Gyro+Acc</td>
+                                    <td>InvenSense</td>
+                                    <td>MPU-6000</td>
+                                    <td>QFN24</td>
+                                    <td>Digi-Key 1248</td>
+                                    <td>1</td>
+                                    <td>10.72</td>
+                                    <td>1</td>
+                                    <td>10.72</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

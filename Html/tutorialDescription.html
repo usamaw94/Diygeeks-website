@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial Description</title>
+    <script src="../Assets/jquery.js"></script>
+    <link href="../Assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../Assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link href="../Assets/CSS/tutorialDescription.css" rel="stylesheet" type="text/css">
+    <link href="../Assets/CSS/shared.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/JS/Shared.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="headLinks" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="../Assets/Images/ainak.png" class="sidenav-logo">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Learn</a>
+    <a href="#">Fab Lab</a>
+    <a href="#">Diy Nest</a>
+</div>
+<div id="wrapper">
+    <div id="head">
+        <div class="head-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-md-0 col-sm-0 col-xs-12 mobile-view">
+                        <table class="table mobile-view-table">
+                            <tr>
+                                <td align="left">
+                                    <span onclick="openNav()"><img class="sidenav-toggle" src="../Assets/Icons/Menu-50.png"></span>
+                                </td>
+                                <td align="center">
+                                    <img class="mobile-view-logo" src="../Assets/Images/ainak.png">
+                                </td>
+                                <td align="right">
+                                    <form autocomplete="on">
+                                        <input class="mobile-search-bar" name="search" type="text" placeholder="Search..">
+                                        <button class="mobile-search-btn" type="submit"><span class="">Button</span></button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-0">
+                        <img class="logo" src="../Assets/Icons/diygeeks-logo.png">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-0">
+                        <ul class="list-inline head-link-container">
+                            <li class="head-link-list"><a class="head-link">Home</a></li>
+                            <li class="head-link-list"><a class="head-link">Shop</a></li>
+                            <li class="head-link-list"><a class="head-link">Learn</a></li>
+                            <li class="head-link-list"><a class="head-link">Fab Lab</a></li>
+                            <li class="head-link-list"><a class="head-link">Diy Nest</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-0">
+                        <form>
+                            <div class="head-search-bar-container input-group">
+                                <input type="text" class="form-control head-search-bar" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary head-search-btn" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-2 col-xs-12 head-icon-container">
+                        <table class="table head-icon-table">
+                            <tr>
+                                <td class="head-table-td"><a><img title="Add Items" class="head-icon"  src="../Assets/Icons/Plus(g).png"></a></td>
+                                <td class="head-table-td"><span><a><img title="View Cart" id="cartBtn" class="head-icon" src="../Assets/Icons/Cart(g).png"><p class="counter">2</p></a></span></td>
+                                <td class="head-table-td"><a><img title="Login/Register" data-toggle="modal" data-target="#loginRegister" class="head-icon"  src="../Assets/Icons/login(g).png"></a></td>
+                                <!-- Modal -->
+                                <div class="modal fade" id="loginRegister" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 login">
+                                                    <p class="login-form-heading" >Login</p>
+                                                    <form>
+                                                        <input type="text" class="form-control" placeholder="Username OR Email *">
+                                                        <input type="password" class="form-control" placeholder="Password *">
+                                                        <p class="login-with-heading">Login With</p>
+                                                        <ul class="list-inline">
+                                                            <li><a><img title="Facebook" class="login-with" src="../Assets/Icons/Facebook(y).png"></a></li>
+                                                            <li><a><img title="Twitter" class="login-with" src="../Assets/Icons/Twitter(y).png"></a></li>
+                                                        </ul>
+                                                        <input type="submit" value="Login" class="btn-block">
+                                                    </form>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 register">
+                                                    <p class="register-form-heading">First Time Here?</p>
+                                                    <p class="register-form-heading">Create Your Account</p><br>
+                                                    <form>
+                                                        <input type="text" class="form-control" placeholder="Email Address *">
+                                                        <input type="password" class="form-control" placeholder="Password *">
+                                                        <p class="register-with-heading">Register With</p>
+                                                        <ul class="list-inline">
+                                                            <li><a><img title="Facebook" class="register-with" src="../Assets/Icons/Facebook(b).png"></a></li>
+                                                            <li><a><img title="Twitter" class="register-with" src="../Assets/Icons/Twitter(b).png"></a></li>
+                                                        </ul>
+                                                        <input type="submit" value="Register" class="btn-block">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-6 col-md-6 col-xs-11">
+                        <div class="cart">
+                            <div class="row cart-item">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <img src="../Assets/Images/IMG_5801-300x300.jpg" style="height: 60px">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-8">
+                                    <p class="cart-item-name">DIY IOT BOX</p>
+                                    <p class="item-unit-price">1 x Rs. 3000</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <p class="item-total"><b>TOTAL :</b> 3000</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <button class="btn btn-block btn-danger">Remove Item</button>
+                                </div>
+                            </div>
+                            <div class="row cart-item">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <img src="../Assets/Images/diy-box-300x300.jpg" style="height: 60px">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-8">
+                                    <p class="cart-item-name">DIY BOX</p>
+                                    <p class="item-unit-price">1 x Rs. 2800</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <p class="item-total"><b>TOTAL :</b> 2800</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <button class="btn btn-block btn-danger">Remove Item</button>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-md-offset-6 col-md-6">
+                                    <p class="grand-total"><b>GRAND TOTAL :</b> Rs. 5800</p>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-md-6 col-sm-6">
+                                    <button class="btn btn-block view-cart">View Cart</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <button class="btn btn-block check-out">Check Out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-6 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-background">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav left-bar-content">
+                                    <li class="active"><a href="#">Page 1</a></li>
+                                    <li><a href="#">Page 2</a></li>
+                                    <li><a href="#">Page 3</a></li>
+                                    <li><a href="#">Page 4</a></li>
+                                    <li><a href="#">Page 5</a></li>
+                                    <li><a href="#">Page 6</a></li>
+                                    <li><a href="#">Page 7</a></li>
+                                    <li><a href="#">Page 8</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right right-bar-content">
+                                    <li class="dropdown btn1-dropdown">
+                                        <a class="btn dropdown-toggle btn1" data-toggle="dropdown" href="#">Button 1 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown btn2-dropdown">
+                                        <a class="btn btn2 dropdown-toggle" data-toggle="dropdown" href="#">Button 2 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu btn2-dropdown">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content-->
+
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="img-container"></div>
+                    <div class="tutorial-heading">
+                        <h2>Arduino Programming</h2>
+                        <hr class="seperator">
+                    </div>
+                    <div class="tutorial-detail">
+                        <p>Programming language is the way in which we convey our algorithm and mathematical models to our microcontroller. Coding in Arduino is done in a ‘C (programming language)’ like fashion.<br><br>
+                            The Structure of Arduino code comprises to two major parts.
+                        </p>
+                        <p><b><i class="fa fa-fw fa-angle-double-right"></i> void Setup()</b> contains the part of code which will only run once. The part of code written here is used to initialize the microcontroller, that is, here we mostly do only two things.</p>
+                        <p>1. Define the purpose of the pin: Analog and Digital pins can be used as either input or output, Therefore it is important to declare whether the pin is being used as an input or output. The Syntax for this declaration is:
+                        </p>
+                        <p style="text-align: center"><b>pinMode(pin number(A0, A1…/2, 3, 4…), INPUT/OUTPUT);</b></p>
+                        <p>For analog pins the ‘pin number’ is replaced by A0, A1 or A3 (one of it). For digital pins the ‘pin number’ is replaced by 2, 3 or 4 (one of it). And after the comma ‘,’ the mode of the pin is defined i.e. either INPUT or OUTPUT (one of it). It is important to notice that the above statement is case sensitive. And each statement ends with a semi-colon ‘;’.</p>
+                        <p><b> 2. Initialize Serial Communication:</b> Serial communications is initialized in order to either work with a                       serial communications device like Bluetooth or Wi-Fi via shields or to display the inputs on our Laptop                           screen via Serial monitor in Arduino IDE. The syntax of initializing serial communication in Arduino is:</p>
+                        <p style="text-align: center"><b>Serial.begin(Baud Rate);</b></p>
+                        <p>In simple terms baud rate is the rate of communication between communication device and Arduino. But we usually use 9600 as the baud rate i.e. Serial.begin(9600); The baud rate varies from device to device.</p>
+                        <p><b><i class="fa fa-fw fa-angle-double-right"></i> void loop()</b> contains the part of code which will run continuously in a loop. For example, if you write the code of switch an LED on and off, the LED will blink continuously until the power to Arduino is cut off. </p>
+                        <p>1. Here we can take in digital or analog inputs as well as give out both analog and digital outputs:</p>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p><b>Syntax</b><br>
+                                        Digital<br>
+                                        Analog
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><b>INPUT</b><br>
+                                        digitalRead(pin number)<br>
+                                        analogRead(pin number)
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><b>OUTPUT</b><br>
+                                        digitalWrite(pin number, HIGH/LOW);<br>
+                                        analogWrite(pin number, 0-255)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>For digital inputs we can replace the pin number from 2 to 13, depending upon pin on which the sensor is attached. Similarly for analog we can replace the pin number to be from A0 to A5.</p>
+                        <p>In case of giving outputs, on digital pins ‘HIGH’ is command is given to turn the LED or buzzer or any other component on and ‘LOW’ command is given to turn off LED, buzzer or any other component along with the respective pin number.  While for giving out analog outputs on PWM pins of Arduino (digital pins with ῀ symbol i.e. pin number: 3, 5, 6, 9, 10, and 11). Rather than giving out HIGH or LOW we give a number between 0-255 | 0 means off, 255 means on. </p>
+
+                        <div class="container-fluid">
+                            <div class="row tutorial-detail-footer">
+                                <div class="col-md-6">
+                                    <p><b>CATEGORIES:</b>
+                                        <a href="">ARDUINO</a>,<a href="">LEARN</a></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="text-align: right"><a><i class="fa fa-fw fa-share"></i> LOVE IT,DO IT,SHARE IT</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img class="user-img" src="../Assets/Images/user.png">
+                                </div>
+                                <div class="col-md-10">
+                                    <h4 class="user-name">User Name</h4>
+                                    <h6 class="comment-date">February 15,2017</h6>
+                                    <p class="comment">Hi, I'm Sandeep. I have a question related to Arduino, I would like to read -5v to 5v                                     input using Arduino ? How can I do that and which board you recommend for this? Please let me know your                                      view about it, Thank you</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr class="seperator">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img class="user-img" src="../Assets/Images/user.png">
+                                </div>
+                                <div class="col-md-10">
+                                    <h4 class="user-name">User Name</h4>
+                                    <h6 class="comment-date">February 15,2017</h6>
+                                    <p class="comment">Hi, I'm Sandeep. I have a question related to Arduino, I would like to read -5v to 5v                                     input using Arduino ? How can I do that and which board you recommend for this? Please let me know your                                      view about it, Thank you</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr class="seperator">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="post-comment">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Post A Comment</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" rows="3" placeholder="Your comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Name *" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="email" class="form-control" placeholder="Email *" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="url" class="form-control" placeholder="Website">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="latest-tutorials">
+                        <h3>Latest Tutorials</h3>
+                        <div class="latest-tutorial container-fluid">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="../Assets/Images/rasberry.png">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Rasberry PI vs Arduino</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="latest-tutorial container-fluid">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="../Assets/Images/bluetooth.png">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Bluetooth with Arduino | Wireless Switching</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="latest-tutorial container-fluid">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="../Assets/Images/knock.png">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Arduino, Knock Sensor with Servo | Door Opener</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content end-->
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row footer-link">
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                SUPPORTED BY
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-data-list">
+                                    <img src="../Assets/Images/PLAN9LOGOWPITB.png" style="height: 30px">
+                                </li>
+                                <li class="footer-data-list">
+                                    <img src="../Assets/Images/microsoft-diygeeks.png" style="height: 30px">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                UTILITIES
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-link-list">
+                                    About Us
+                                </li>
+                                <li class="footer-link-list">
+                                    Contact US
+                                </li>
+                                <li class="footer-link-list">
+                                    Message for You
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                WE ARE SECURE!
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-data-list">
+                                    <img src="../Assets/Images/comodo_secure.png" style="height: 60px">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-data">
+                            <h3 class="footer-category">
+                                CONTACT INFO
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="footer-data-list">
+                                    <h4>ADDRESS</h4>
+                                    <p>Room # 3, 9th Floor
+                                        Arfa Software Technology Park, Lahore</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copy-right">
+                    <div class="col-md-12">
+                        <center>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p><a href="#">privacy </a>/<a href="#"> terms and conditions</a></p>
+                                </li>
+                                <li>
+                                    <p>DIY GEEKS - Socializing Technology - 2016</p>
+                                </li>
+                            </ul>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../Assets/JS/tutorials.js"></script>
+</body>
+</html>

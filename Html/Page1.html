@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page 1</title>
+    <script src="../Assets/jquery.js"></script>
+    <link href="../Assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <link href="../Assets/CSS/demo.css" rel="stylesheet">
+    <link href="../Assets/CSS/shared.css" rel="stylesheet" type="text/css">
+    <link href="../Assets/CSS/Page1.css" rel="stylesheet" type="text/css">
+    <script src="../Assets/JS/Shared.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="headLinks" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="../Assets/Images/ainak.png" class="sidenav-logo">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Learn</a>
+    <a href="#">Fab Lab</a>
+    <a href="#">Diy Nest</a>
+</div>
+<div id="wrapper">
+    <div id="head">
+        <div class="head-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-0 col-md-0 col-sm-0 col-xs-12 mobile-view">
+                        <table class="table mobile-view-table">
+                            <tr>
+                                <td align="left">
+                                    <span onclick="openNav()"><img class="sidenav-toggle" src="../Assets/Icons/Menu-50.png"></span>
+                                </td>
+                                <td align="center">
+                                    <img class="mobile-view-logo" src="../Assets/Images/ainak.png">
+                                </td>
+                                <td align="right">
+                                    <form autocomplete="on">
+                                        <input class="mobile-search-bar" name="search" type="text" placeholder="Search..">
+                                        <button class="mobile-search-btn" type="submit"><span class="">Button</span></button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-0">
+                        <img class="logo" src="../Assets/Icons/diygeeks-logo.png">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-0">
+                        <ul class="list-inline head-link-container">
+                            <li class="head-link-list"><a class="head-link">Home</a></li>
+                            <li class="head-link-list"><a class="head-link">Shop</a></li>
+                            <li class="head-link-list"><a class="head-link">Learn</a></li>
+                            <li class="head-link-list"><a class="head-link">Fab Lab</a></li>
+                            <li class="head-link-list"><a class="head-link">Diy Nest</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-0">
+                        <form>
+                            <div class="head-search-bar-container input-group">
+                                <input type="text" class="form-control head-search-bar" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary head-search-btn" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-2 col-xs-12 head-icon-container">
+                        <table class="table head-icon-table">
+                            <tr>
+                                <td class="head-table-td"><a><img title="Add Items" class="head-icon"  src="../Assets/Icons/Plus(g).png"></a></td>
+                                <td class="head-table-td"><span><a><img title="View Cart" id="cartBtn" class="head-icon" src="../Assets/Icons/Cart(g).png"><p class="counter">2</p></a></span></td>
+                                <td class="head-table-td"><a><img title="Login/Register" data-toggle="modal" data-target="#loginRegister" class="head-icon"  src="../Assets/Icons/login(g).png"></a></td>
+                                <!-- Modal -->
+                                <div class="modal fade" id="loginRegister" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 login">
+                                                    <p class="login-form-heading" >Login</p>
+                                                    <form>
+                                                        <input type="text" class="form-control" placeholder="Username OR Email *">
+                                                        <input type="password" class="form-control" placeholder="Password *">
+                                                        <p class="login-with-heading">Login With</p>
+                                                        <ul class="list-inline">
+                                                            <li><a><img title="Facebook" class="login-with" src="../Assets/Icons/Facebook(y).png"></a></li>
+                                                            <li><a><img title="Twitter" class="login-with" src="../Assets/Icons/Twitter(y).png"></a></li>
+                                                        </ul>
+                                                        <input type="submit" value="Login" class="btn-block">
+                                                    </form>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 register">
+                                                    <p class="register-form-heading">First Time Here?</p>
+                                                    <p class="register-form-heading">Create Your Account</p><br>
+                                                    <form>
+                                                        <input type="text" class="form-control" placeholder="Email Address *">
+                                                        <input type="password" class="form-control" placeholder="Password *">
+                                                        <p class="register-with-heading">Register With</p>
+                                                        <ul class="list-inline">
+                                                            <li><a><img title="Facebook" class="register-with" src="../Assets/Icons/Facebook(b).png"></a></li>
+                                                            <li><a><img title="Twitter" class="register-with" src="../Assets/Icons/Twitter(b).png"></a></li>
+                                                        </ul>
+                                                        <input type="submit" value="Register" class="btn-block">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-6 col-md-6 col-xs-11">
+                        <div class="cart">
+                            <div class="row cart-item">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <img src="../Assets/Images/IMG_5801-300x300.jpg" style="height: 60px">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-8">
+                                    <p class="cart-item-name">DIY IOT BOX</p>
+                                    <p class="item-unit-price">1 x Rs. 3000</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <p class="item-total"><b>TOTAL :</b> 3000</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <button class="btn btn-block btn-danger">Remove Item</button>
+                                </div>
+                            </div>
+                            <div class="row cart-item">
+                                <div class="col-md-2 col-sm-2 col-xs-4">
+                                    <img src="../Assets/Images/diy-box-300x300.jpg" style="height: 60px">
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-8">
+                                    <p class="cart-item-name">DIY BOX</p>
+                                    <p class="item-unit-price">1 x Rs. 2800</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <p class="item-total"><b>TOTAL :</b> 2800</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <button class="btn btn-block btn-danger">Remove Item</button>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-md-offset-6 col-md-6">
+                                    <p class="grand-total"><b>GRAND TOTAL :</b> Rs. 5800</p>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-md-6 col-sm-6">
+                                    <button class="btn btn-block view-cart">View Cart</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <button class="btn btn-block check-out">Check Out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-6 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-background">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav left-bar-content">
+                                    <li class="active"><a href="#">Page 1</a></li>
+                                    <li><a href="#">Page 2</a></li>
+                                    <li><a href="#">Page 3</a></li>
+                                    <li><a href="#">Page 4</a></li>
+                                    <li><a href="#">Page 5</a></li>
+                                    <li><a href="#">Page 6</a></li>
+                                    <li><a href="#">Page 7</a></li>
+                                    <li><a href="#">Page 8</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right right-bar-content">
+                                    <li class="dropdown btn1-dropdown">
+                                        <a class="btn dropdown-toggle btn1" data-toggle="dropdown" href="#">Button 1 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown btn2-dropdown">
+                                        <a class="btn btn2 dropdown-toggle" data-toggle="dropdown" href="#">Button 2 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu btn2-dropdown">
+                                            <li><a href="#">Page 4</a></li>
+                                            <li><a href="#">Page 5</a></li>
+                                            <li><a href="#">Page 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="left-content">
+                        <ul class="list-unstyled">
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Arduino Board</li></a>
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Development Board</li></a>
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Display</li></a>
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Electronics</li></a>
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Sensors</li></a>
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Motors</li></a>
+                            <a class="left-list-link"><li class="left-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Tools</li></a>
+                            <a class="left-list-link"><li class="left-last-list-item"><span class="glyphicon glyphicon-link"></span> &nbsp;&nbsp;&nbsp;Wireless</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="right-content">
+                        <div id="carousel-example-generic" class="carousel slide" data-interval="2000">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+
+                                <!-- First slide -->
+                                <div class="item slide1 active">
+
+                                    <div class="carousel-caption">
+                                        <div class="slide1-text1">
+                                            <h3>
+                                                Caption 1
+                                            </h3>
+                                        </div>
+                                        <div class="slide1-text2">
+                                            <h3>
+                                                Caption 2
+                                            </h3>
+                                        </div>
+                                        <div class="slide1-btn">
+                                            <button class="btn btn-lg" data-animation="animated">Button</button>
+                                        </div>
+                                    </div>
+                                </div> <!-- /.item -->
+
+                                <!-- Second slide -->
+                                <div class="item slide2">
+                                    <div class="carousel-caption" data-interval="1000">
+                                        <div class="slide2-text">
+                                            <h3>
+                                                Caption 1
+                                            </h3>
+                                        </div>
+                                        <div class="slide2-btn">
+                                            <button class="btn btn-primary btn-lg" data-animation="animated zoomInRight">Button</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.item -->
+
+                                <!-- Third slide -->
+                                <div class="item slide3">
+                                    <div class="carousel-caption">
+                                        <div class="slide3-text">
+                                            <h3>
+                                                Caption 1
+                                            </h3>
+                                        </div>
+                                        <div class="slide3-btn">
+                                            <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn">Button</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.item -->
+
+                            </div><!-- /.carousel-inner -->
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row category-container">
+                <div class="col-md-4">
+                    <a class="cat-link">
+                    <div class="category">
+                        <table class="table cat">
+                            <tr>
+                                <td>
+                                    <h4>DISCOVER THE TUTORIALS</h4>
+                                </td>
+                                <td rowspan="2" style="padding: 0">
+                                    <img src="../Assets/Images/tut-1.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>We are here to mentor and teach you at every step of the way. From simple tutorials of blinking LEDs to large convertible robots.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <table class="table cat">
+                            <tr>
+                                <td>
+                                    <h4>MAKE AN IRON MAN AT MAKERSPACE</h4>
+                                </td>
+                                <td rowspan="2" style="padding: 0">
+                                    <img src="../Assets/Images/makerspace-diygeeks.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>We, here at DIY GEEKS, provide you a platform to experiment and learn…. Let’s say ‘your personal laboratory’.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <table class="table cat">
+                            <tr>
+                                <td>
+                                    <h4>PAKISTAN'S FIRST ONLINE FAB LAB</h4>
+                                </td>
+                                <td rowspan="2" style="padding: 0">
+                                    <img src="../Assets/Images/fab-lab-diygeeks-1.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Once you get your ‘laboratory’ running, get all the resources in our fabrication lab, from PCB etching to 3D printing.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 products-container">
+                    <div class="product-carousel carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="productCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div class="product">
+                                            <div class="photo">
+                                                <img src="../Assets/Images/Arduino-Uno--300x300.jpg" class="product-img img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-12">
+                                                        <h5>
+                                                            ARDUINO UNO R3</h5>
+                                                        <h5 class="price-text-color">
+                                                            Rs 650.00</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="glyphicon glyphicon-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                    <p class="btn-details">
+                                                        <i class="glyphicon glyphicon-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div class="product">
+                                            <div class="photo">
+                                                <img src="../Assets/Images/Arduino-Mega-2560-300x300.jpg" class="product-img img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-12">
+                                                        <h5>
+                                                            ARDUINO MEGA
+                                                        </h5>
+                                                        <h5 class="price-text-color">
+                                                            Rs 1000.00</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="glyphicon glyphicon-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                    <p class="btn-details">
+                                                        <i class="glyphicon glyphicon-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div class="product">
+                                            <div class="photo">
+                                                <img src="../Assets/Images/buck11-300x300.jpg" class="product-img img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-12">
+                                                        <h5>
+                                                            BUCK CIRCUIT</h5>
+                                                        <h5 class="price-text-color">
+                                                            Rs 350.00</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="glyphicon glyphicon-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                    <p class="btn-details">
+                                                        <i class="glyphicon glyphicon-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div class="product">
+                                            <div class="photo">
+                                                <img src="../Assets/Images/diy-box-300x300.jpg" class="product-img img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-12">
+                                                        <h5>
+                                                            DIY BOX</h5>
+                                                        <h5 class="price-text-color">
+                                                            Rs 2800.00</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="glyphicon glyphicon-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                    <p class="btn-details">
+                                                        <i class="glyphicon glyphicon-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div class="product">
+                                            <div class="photo">
+                                                <img src="../Assets/Images/IMG_5801-300x300.jpg" class="product-img img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-12">
+                                                        <h5>
+                                                            DIY IOT BOX</h5>
+                                                        <h5 class="price-text-color">
+                                                            RS 3000.00</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <i class="glyphicon glyphicon-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                    <p class="btn-details">
+                                                        <i class="glyphicon glyphicon-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#productCarousel" data-slide="prev"><div class="product-control-container"><i class="glyphicon glyphicon-menu-left"></i></div></a>
+                        <a class="right carousel-control" href="#productCarousel" data-slide="next"><div class="product-control-container"><i class="glyphicon glyphicon-menu-right"></i></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <center>
+                    <div class="learning-resource">
+                        <img src="../Assets/Images/arduino-p-283x170.png" class="learning-resource-img">
+                        <div class="learning-details">
+                            <h4>ARDUINO PROGRAMMING</h4>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a>
+                                        <span title="Add to Cart" class="icon glyphicon glyphicon-shopping-cart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="Add to Wishlist" class="icon glyphicon glyphicon-heart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="More Details" class="icon glyphicon glyphicon-list"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </center>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <center>
+                    <div class="learning-resource">
+                        <img src="../Assets/Images/Knock-Door-Open-Closed_bb-283x170.png" class="learning-resource-img">
+                        <div class="learning-details">
+                        <h4>ARDUINO,KNOCK SENSOR WITH SERVO | DOOR OPEN</h4>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a>
+                                        <span title="Add to Cart" class="icon glyphicon glyphicon-shopping-cart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="Add to Wishlist" class="icon glyphicon glyphicon-heart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="More Details" class="icon glyphicon glyphicon-list"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                        </center>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <center>
+                    <div class="learning-resource">
+                        <img src="../Assets/Images/gsdiy-283x170.png" class="learning-resource-img">
+                        <div class="learning-details">
+                        <h4>GETTING STARTED</h4>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a>
+                                        <span title="Add to Cart" class="icon glyphicon glyphicon-shopping-cart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="Add to Wishlist" class="icon glyphicon glyphicon-heart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="More Details" class="icon glyphicon glyphicon-list"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                        </center>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <center>
+                    <div class="learning-resource">
+                        <img src="../Assets/Images/T1-Button-LED-283x170.png" class="learning-resource-img">
+                        <div class="learning-details">
+                        <h4>ARDUINO, PUSH BUTTON WITH LED | PUSH LIGHT NOTIFIER</h4>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a>
+                                        <span title="Add to Cart" class="icon glyphicon glyphicon-shopping-cart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="Add to Wishlist" class="icon glyphicon glyphicon-heart"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <span title="More Details" class="icon glyphicon glyphicon-list"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                        </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 geeks-favourite-container" style="margin: 0; padding: 0">
+                    <div class="geeks-favourite carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="geeksFavourite">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">ROBOTICS</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/robot.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks" >
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">SENSORS</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/sensors.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">TOOLS</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/tools.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">WIRELESS</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/wireless.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">DISPLAY</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/display.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">POWER</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/power.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">DEVELOPEMENT BOARD</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/development-board.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <a href="">
+                                        <div class="geeks">
+                                            <div class="geeks-inner effect">
+                                                <h2 class="zero">ELECTRONICS</h2>
+                                                <p class="zero">Products : 9</p>
+                                                <img class="top" src="../Assets/Images/electronics.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#geeksFavourite" data-slide="prev"><i class="glyphicon glyphicon-menu-left"></i></a>
+                        <a class="right carousel-control" href="#geeksFavourite" data-slide="next"><i class="glyphicon glyphicon-menu-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row footer-link">
+                    <div class="col-md-3">
+                    <div class="footer-data">
+                        <h3 class="footer-category">
+                            SUPPORTED BY
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-data-list">
+                                <img src="../Assets/Images/PLAN9LOGOWPITB.png" style="height: 30px">
+                            </li>
+                            <li class="footer-data-list">
+                                <img src="../Assets/Images/microsoft-diygeeks.png" style="height: 30px">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                    <div class="footer-data">
+                        <h3 class="footer-category">
+                            UTILITIES
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-link-list">
+                                About Us
+                            </li>
+                            <li class="footer-link-list">
+                                Contact US
+                            </li>
+                            <li class="footer-link-list">
+                                Message for You
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                    <div class="footer-data">
+                        <h3 class="footer-category">
+                            WE ARE SECURE!
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-data-list">
+                                <img src="../Assets/Images/comodo_secure.png" style="height: 60px">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                    <div class="footer-data">
+                        <h3 class="footer-category">
+                            CONTACT INFO
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-data-list">
+                                <h4>ADDRESS</h4>
+                                <p>Room # 3, 9th Floor
+                                    Arfa Software Technology Park, Lahore</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="row copy-right">
+                    <div class="col-md-12">
+                        <center>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p><a href="#">privacy </a>/<a href="#"> terms and conditions</a></p>
+                            </li>
+                            <li>
+                                <p>DIY GEEKS - Socializing Technology - 2016</p>
+                            </li>
+                        </ul>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../Assets/JS/CarouselTest2.js"></script>
+<script src="../Assets/JS/CarouselTest1.js"></script>
+</body>
+</html>
